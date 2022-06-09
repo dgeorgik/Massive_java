@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Laba2 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        String input1 = scanner.nextLine();
+        String input2 = scanner.nextLine();
+        String[] items1 = input1.split(" ");
+        String[] items2 = input2.split(" ");
+        for (int i = 0; i < items2.length; i++) {
+            for (int j = 0; j < items1.length; j++) {
+                if (items2[i].equals(items1[j])) {
+                    System.out.print(items2[i] + " ");
+                }
+            }
+        }
+    }
+}
